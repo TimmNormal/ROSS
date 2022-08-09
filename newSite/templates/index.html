@@ -446,11 +446,12 @@ input[type=file] {
 }
 .slider__container {
   overflow: hidden;
-  background-color: pink;
+  background-color: #fff;
   width: 1100px;
   margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
+  display: flex;
 }
 .slider__track {
   display: flex;
@@ -459,6 +460,28 @@ input[type=file] {
 .slider__item {
   height: 385px;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.slider__item img{
+  position: absolute;
+  right: 45px;
+  top: 75px;
+}
+.slider__form{
+  width: 100%;
+  height: 100%;
+
+}
+.slider__text{
+  font-size: 28px;
+  border: none;
+  background-color: #fff;
+  text-align: left;
+  padding-left: 80px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .slider__image {
   width: 100%;
@@ -488,6 +511,9 @@ input[type=file] {
   cursor: pointer;
   width: 50px;
   height: 50px;
+  position: absolute;
+  top: 160px;
+  z-index: 5;
 }
 .slider__toggles__left img {
   width: 100%;
@@ -506,6 +532,10 @@ input[type=file] {
   cursor: pointer;
   width: 50px;
   height: 50px;
+  position: absolute;
+  top: 160px;
+  right: 0px;
+  z-index: 6;
 }
 .slider__toggles__right img {
   width: 100%;
@@ -739,38 +769,59 @@ input[type=file] {
 	<section class="slider">	
     	<h1 class="slider__title">ЧТО МЫ МОЖЕМ ПРЕДЛОЖИТЬ</h1>
 
-
-
-
     	<div class="slider__container">	
+        <button class="slider__toggles__left">
+          <img src="../static/images/back_arrow_5821.png" alt="">
+        </button>
     		<div class="slider__track">
     			<div class="slider__item">
-    				<img src="../static/images/Zycb93mesKE.jpg" alt="" class="slider__image">
-    			</div>
-    			<div class="slider__item">
-    				<img src="../static/images/g42xrCBMXVQ.jpg" alt="" class="slider__image">
-    			</div>
-    			<div class="slider__item">
-    				<img src="../static/images/D9Zd3K5OFf0.jpg" alt="" class="slider__image">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Системы дальнего видеонаблюдения" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
     			</div>
           <div class="slider__item">
-    				<img src="../static/images/g42xrCBMXVQ.jpg" alt="" class="slider__image">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Мобильный привязной аэростатный комплекс" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
     			</div>
-    			<div class="slider__item">
-    				<img src="../static/images/D9Zd3K5OFf0.jpg" alt="" class="slider__image">
+          <div class="slider__item">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Мобильный пункт управления" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
     			</div>
-    		</div>
-    		<div class="slider__toggles">
-	    		<button class="slider__toggles__left">
-	    			<img src="../static/images/back_arrow_5821.png" alt="">
-	    			
-	    		</button>
-	    		<button class="slider__toggles__right">
-	    			<img src="../static/images/forwardarrow_haciaadelante_4836.png" alt="">
-	    		</button>
-	    	</div>
+          <div class="slider__item">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Гиростабилизированные оптико-электронные средства" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
+    			</div>
+          <div class="slider__item">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Гиростабилизированные оптико-электронные средства" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
+    			</div>
+          <div class="slider__item">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Робототехника" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
+    			</div>
+          <div class="slider__item">
+            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <input type="submit" value="Разработки" class="slider__text"/>
+            </form>
+            <img src="../static/images/DSC_0302 1.png" alt="">
+    			</div>
+	    		
+	    	
     	</div>
-    	
+      <button class="slider__toggles__right">
+        <img src="../static/images/forwardarrow_haciaadelante_4836.png" alt="">
+      </button>
 
 
 

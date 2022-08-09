@@ -416,6 +416,13 @@ a {
   background-color: #fff;
   transition: 0.2s
 }
+.modalProd__item a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .modalProd__item:hover{
   transform: scale(1.2);
 }
@@ -478,6 +485,11 @@ a {
   font-weight: normal;
   color: #0C3B83;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
