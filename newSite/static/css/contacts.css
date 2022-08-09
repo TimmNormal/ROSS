@@ -1,0 +1,129 @@
+.ourContacts {
+  background-color: #0C3B83;
+  padding: 20px 48px;
+}
+.ourContacts__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.phonesCont pre {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.specialists {
+  background: #fff;
+  padding-bottom: 20px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 22px;
+}
+.specialists:first-child {
+  padding-top: 38px;
+}
+.specialists__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0C3B83;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 69px;
+}
+.specialists__content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.specialists__content__imgSec {
+  height: 463px;
+  width: 356px;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 44px;
+}
+.specialists__content__imgSec p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0C3B83;
+  display: block;
+  text-align: center;
+}
+.specialists__content__info {
+  max-width: 704px;
+}
+.specialists__name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0C3B83;
+}
+.specialists__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 400;
+  color: #0C3B83;
+}
+
+.specialists2 {
+  background-image: url("../images/contactsBg.png");
+}
+.specialists2__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.specialists2__content__imgSec {
+  height: 463px;
+  width: 396px;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 44px;
+}
+.specialists2__content__imgSec p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  text-align: center;
+}
+.specialists2__content__info {
+  max-width: 704px;
+}
+.specialists2__name {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+}
+.specialists2__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  text-align: right;
+}

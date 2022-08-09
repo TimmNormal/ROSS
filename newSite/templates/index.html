@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/headerFooter.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/index.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,700,900&display=swap" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<style type="text/css">
+		html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #DCDCDC;
+}
+
+.main{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px !important;
+}
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer{
+  flex-grow: 0
+}
+@media (min-width: 1200px) {
+  .center {
+    width: 100%;
+  }
+}
+@keyframes slidingNav {
+  0% {
+    right: 1040px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+@keyframes slidingNav2 {
+  0% {
+    right: 915px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+@keyframes slidingNav3 {
+  0% {
+    right: 785px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+@keyframes slidingNav4 {
+  0% {
+    right: 655px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+@keyframes slidingNav5 {
+  0% {
+    right: 525px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+@keyframes slidingNav6 {
+  0% {
+    right: 395px;
+    margin-top: 45px;
+  }
+  100% {
+    right: 245px;
+    transform: scale(0.85);
+    margin-top: 0;
+  }
+}
+.header {
+  max-height: 238px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.header__nav {
+  background-color: #fff;
+  width: 1200px;
+  height: 238px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  
+
+}
+.header__nav__link {
+  background-color: #0C3B83;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms;
+  position: absolute;
+  margin-top: 45px;
+}
+.header__nav__link:hover {
+  background-color: #fff;
+  transform: scale(1.2) !important;
+  z-index: 6;
+  color: #0C3B83;
+  border: 1px solid #0C3B83;
+}
+
+
+
+
+.header__nav__link:first-child {
+  right: 1045px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav 500ms reverse;
+}
+.header__nav__link:nth-child(2) {
+  right: 915px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav2 500ms reverse;
+}
+.header__nav__link:nth-child(3) {
+  right: 785px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav3 500ms reverse;
+}
+.header__nav__link:nth-child(4) {
+  right: 655px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav4 500ms reverse;
+}
+.header__nav__link:nth-child(5) {
+  right: 525px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav5 500ms reverse;
+}
+.header__nav__link:nth-child(6) {
+  right: 395px;
+  top: 24px;
+  transform: scale(1);
+  animation: slidingNav6 500ms reverse;
+}
+
+
+
+
+
+
+
+.header__rCont {
+  position: absolute;
+  right: 0;
+}
+.header__rCont__logo {
+  margin-bottom: 18px;
+}
+.header__rCont__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  color: #0C3B83;
+  width: 360px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer {
+  min-height: 120px;
+  background-color: #0C3B83;
+}
+
+.footerNav {
+  padding: 60px calc(50% - 600px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  list-style-type: none;
+}
+.footerNav__link {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  transition: 200ms;
+}
+.footerNav__link:hover {
+  color: #C4C4C4;
+}
+
+.question {
+  background-color: #fff;
+  padding: 44px 34px;
+  display: flex;
+  flex-direction: column;
+}
+.question__title {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  font-weight: 700;
+  color: #0C3B83;
+  margin-bottom: 33px;
+  text-align: right;
+}
+.question__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.question__textarea {
+  border-bottom-right-radius: none !important;
+  padding-top: 8px !important;
+  min-width: 320px;
+  max-width: 320px;
+  height: 45px;
+  border: 2px solid #0C3B83;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+  outline: none;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: blackb;
+}
+.question__textarea::-webkit-input-placeholder {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+.question__input {
+  width: 320px;
+  height: 45px;
+  border: 2px solid #0C3B83;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 11px;
+  outline: none;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: blackb;
+}
+.question__input::-webkit-input-placeholder {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+.question__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  width: 349px;
+  height: 66px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  background-color: #0C3B83;
+  transition: 200ms;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+}
+.question__button:hover {
+  color: #0C3B83;
+  background-color: #fff;
+  border: 1px solid #0C3B83;
+}
+.question__file {
+  width: 100%;
+  height: 45px;
+  border: 2px solid #0C3B83;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 11px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+.question__file::-webkit-input-placeholder {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+input[type=file] {
+  display: none;
+}
+
+
+
+
+.cooperation {
+  background-color: #fff;
+  padding: 0 33px;
+  padding: 0 calc(50% - 600px);
+}
+.cooperation__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  color: #0C3B83;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+.cooperation__list {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+.cooperation__item {
+  text-align: center;
+  padding: 0 16px;
+  align-self: stretch;
+  max-width: 320px;
+}
+.cooperation__item:first-child {
+  border-right: 1px solid #0C3B83;
+}
+.cooperation__item:last-child {
+  border-left: 1px solid #0C3B83;
+}
+.cooperation__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0C3B83;
+}
+
+.slider {
+  background-image: url("../static/images/sliderBg.png");
+  background-size: cover;
+  padding: 0 calc(50% - 600px);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  
+}
+.slider__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  padding: 42px 40px;
+  margin: 0;
+  text-align: right;
+}
+.slider__container {
+  overflow: hidden;
+  background-color: pink;
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.slider__track {
+  display: flex;
+  transition: 900ms;
+}
+.slider__item {
+  height: 385px;
+  position: relative;
+}
+.slider__image {
+  width: 100%;
+}
+.slider__image:nth-child(3n+1) {
+  background-color: red;
+}
+.slider__image:nth-child(3n+2) {
+  background-color: green;
+}
+.slider__image:nth-child(3n+3) {
+  background-color: blue;
+}
+.slider__toggles {
+  margin-bottom: 40px;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.slider__toggles__left {
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.slider__toggles__left img {
+  width: 100%;
+  height: 100%;
+}
+.slider__toggles__left:focus {
+  outline: none;
+}
+.slider__toggles__left:active {
+  transform: scale(1.2);
+}
+.slider__toggles__right {
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.slider__toggles__right img {
+  width: 100%;
+  height: 100%;
+}
+.slider__toggles__right:focus {
+  outline: none;
+}
+.slider__toggles__right:active {
+  transform: scale(1.2);
+}
+.slider__button {
+  width: 100%;
+  max-width: 348px;
+  height: 62px;
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0C3B83;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: 200ms;
+  cursor: pointer;
+}
+.slider__button:focus {
+  outline: none;
+}
+.slider__button:hover {
+  background-color: #0C3B83;
+  color: white;
+}
+
+.rewiews {
+  padding: 0 calc(50% - 600px);
+  padding-top: 78px;
+  padding-bottom: 45px;
+  background-color: #fff;
+}
+.rewiews__h1 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  font-weight: bold;
+  color: #0C3B83;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.rewiews__h2 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #0C3B83;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.rewiews__h3 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: normal;
+  color: #0C3B83;
+  margin: 0;
+}
+
+.borderLeft {
+  border-left: 3px solid #0C3B83;
+  padding-left: 23px;
+  width: 876px;
+}
+
+.commentSlider {
+  padding: 46px calc(50% - 600px);
+  background-color: #F1F1F1;
+  margin-bottom: 86px;
+  overflow: hidden;
+  position: relative;
+}
+.commentSlider__btnLeft {
+  position: absolute;
+  left: 20px;
+  top: 160px;
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.commentSlider__btnLeft img {
+  width: 100%;
+  height: 100%;
+}
+.commentSlider__btnLeft:focus {
+  outline: none;
+}
+.commentSlider__btnLeft:active {
+  transform: scale(1.2);
+}
+.commentSlider__btnRight {
+  position: absolute;
+  right: 20px;
+  top: 160px;
+  font-size: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+.commentSlider__btnRight img {
+  width: 100%;
+  height: 100%;
+}
+.commentSlider__btnRight:focus {
+  outline: none;
+}
+.commentSlider__btnRight:active {
+  transform: scale(1.2);
+}
+.commentSlider__track {
+  display: flex;
+  transition: 900ms;
+}
+.commentSlider__item {
+  display: flex;
+}
+.commentSlider__content {
+  overflow: hidden;
+}
+.commentSlider__content__info {
+  margin-left: 32px;
+}
+.commentSlider__content__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 700;
+  color: #7e7e7e;
+}
+.commentSlider__content__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  color: #7e7e7e;
+}
+.commentSlider__content__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.commentSlider__content__item a {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7E7E7E;
+}
+.commentSlider__content__item:not(:last-child, :first-child) {
+  margin-right: 50px;
+}
+.commentSlider__content__item:nth-child(2) {
+  margin-right: auto;
+  margin-left: 12px;
+}
+
+
+.headerOuter{
+  
+  width: 100%;
+  background-color: #fff;
+}
+	</style>
+	<title>Главная</title>
+</head>
+<body>
+
+
+<header class="center header">
+  <div class="headerOuter">
+  	<nav class="header__nav">
+  		<a href="#" class="header__nav__link">ГЛАВНАЯ</a>
+      <a href="about.html" class="header__nav__link">О КОМПАНИИ</a>
+  		<a href="products.html" class="header__nav__link">ПРОДУКЦИЯ</a>
+  		<a href="career.html" class="header__nav__link">КАРЬЕРА</a>
+  		<a href="contacts.html" class="header__nav__link">КОНТАКТЫ</a>
+  		<div class="header__rCont">
+  			<img src="../static/images/headerLogo.png" alt="" class="header__rCont__logo">
+  			<p class="header__rCont__text">Радиоэлектронные и оптические спецсистемы</p>
+  		</div>
+  	</nav>
+  </div>
+</header>
+
+
+<div class="main center">	
+	<section class="cooperation ">	
+		<h1 class="cooperation__title">СОТРУДНИЧЕСТВО С НАМИ ВЫГОДНО!</h1>
+		<div class="cooperation__list">
+			<div class="cooperation__item">
+				<img src="../static/images/coopItem1.png" alt="" class="cooperation__image">
+				<p class="cooperation__text">Предоставляет  услуги и продукцию в области разработки программно-аппаратных комплексов с 1992 года.</p>
+			</div>
+			<div class="cooperation__item">
+				<img src="../static/images/coopItem2.png" alt="" class="cooperation__image">
+				<p class="cooperation__text">Реализовываем на самом высоком уровне поставленные заказчиком задачи.</p>
+			</div>
+			<div class="cooperation__item">
+				<img src="../static/images/coopItem3.png" alt="" class="cooperation__image">
+				<p class="cooperation__text">Проводим научные исследования  перед каждым запуском продукта</p>
+			</div>
+
+		</div>
+	</section>
+  <section class="animated-microschemes">
+
+  </section>
+	<section class="slider">	
+    	<h1 class="slider__title">ЧТО МЫ МОЖЕМ ПРЕДЛОЖИТЬ</h1>
+
+
+
+
+    	<div class="slider__container">	
+    		<div class="slider__track">
+    			<div class="slider__item">
+    				<img src="../static/images/Zycb93mesKE.jpg" alt="" class="slider__image">
+    			</div>
+    			<div class="slider__item">
+    				<img src="../static/images/g42xrCBMXVQ.jpg" alt="" class="slider__image">
+    			</div>
+    			<div class="slider__item">
+    				<img src="../static/images/D9Zd3K5OFf0.jpg" alt="" class="slider__image">
+    			</div>
+          <div class="slider__item">
+    				<img src="../static/images/g42xrCBMXVQ.jpg" alt="" class="slider__image">
+    			</div>
+    			<div class="slider__item">
+    				<img src="../static/images/D9Zd3K5OFf0.jpg" alt="" class="slider__image">
+    			</div>
+    		</div>
+    		<div class="slider__toggles">
+	    		<button class="slider__toggles__left">
+	    			<img src="../static/images/back_arrow_5821.png" alt="">
+	    			
+	    		</button>
+	    		<button class="slider__toggles__right">
+	    			<img src="../static/images/forwardarrow_haciaadelante_4836.png" alt="">
+	    		</button>
+	    	</div>
+    	</div>
+    	
+
+
+
+
+    	<!--<button class="slider__button">СОТРУДНИЧАТЬ</button>-->
+	</section>	
+
+
+
+
+
+
+	<!--<section class="commentSlider">
+		<div class="commentSlider__content">
+			<div class="commentSlider__track">
+				<div class="commentSlider__item">
+					<img src="../static/images/commentSliderImage.png" alt="" class="commentSlider__image">
+
+					<div class="commentSlider__content__info">
+						<p class="commentSlider__content__title">ШАБАТУРА ЭЛИНА ПАВЛОВНА</p>
+						<p class="commentSlider__content__text">“Компания знает свое дело, помогла с проектом. Отдельно хочется отметить грамотность менеджеров и бла бла бла бла бла бла..”</p>
+						<ul class="commentSlider__content__list">
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage1.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">8 999 888 55 66</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage2.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage3.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage4.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="commentSlider__item">
+					<img src="../static/images/commentSliderImage.png" alt="" class="commentSlider__image">
+
+					<div class="commentSlider__content__info">
+						<p class="commentSlider__content__title">ШАБАТУРА ЭЛИНА ПАВЛОВНА</p>
+						<p class="commentSlider__content__text">“Компания знает свое дело, помогла с проектом. Отдельно хочется отметить грамотность менеджеров и бла бла бла бла бла бла..”</p>
+						<ul class="commentSlider__content__list">
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage1.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">8 999 888 55 66</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage2.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage3.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage4.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="commentSlider__item">
+					<img src="../static/images/commentSliderImage.png" alt="" class="commentSlider__image">
+
+					<div class="commentSlider__content__info">
+						<p class="commentSlider__content__title">ШАБАТУРА ЭЛИНА ПАВЛОВНА</p>
+						<p class="commentSlider__content__text">“Компания знает свое дело, помогла с проектом. Отдельно хочется отметить грамотность менеджеров и бла бла бла бла бла бла..”</p>
+						<ul class="commentSlider__content__list">
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage1.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">8 999 888 55 66</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage2.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage3.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage4.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="commentSlider__item">
+					<img src="../static/images/commentSliderImage.png" alt="" class="commentSlider__image">
+
+					<div class="commentSlider__content__info">
+						<p class="commentSlider__content__title">ШАБАТУРА ЭЛИНА ПАВЛОВНА</p>
+						<p class="commentSlider__content__text">“Компания знает свое дело, помогла с проектом. Отдельно хочется отметить грамотность менеджеров и бла бла бла бла бла бла..”</p>
+						<ul class="commentSlider__content__list">
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage1.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">8 999 888 55 66</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage2.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage3.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+							<li class="commentSlider__content__item">
+								<a href="#" class="commentSlider__content__link">
+									<img src="../static/images/commentImage4.png" alt="" class="commentSlider__content__image">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<button class="commentSlider__btnLeft">
+				<img src="../static/images/back_arrow_5821.png" alt="">
+			</button>
+			<button class="commentSlider__btnRight">
+				<img src="../static/images/forwardarrow_haciaadelante_4836.png" alt="">
+			</button>
+		</div>
+	</section>-->
+</div>
+
+
+
+
+
+<footer class="center">
+	<ul class="footerNav">
+		<li class="footerNav__item">
+			<a href="index.html" class="footerNav__link">ГЛАВНАЯ</a>
+		</li>
+		<li class="footerNav__item">
+			<a href="about.html" class="footerNav__link">О КОМПАНИИ</a>
+		</li>
+		<li class="footerNav__item">
+			<a href="products.html" class="footerNav__link">ПРОДУКЦИЯ</a>
+		</li>
+		<li class="footerNav__item">
+			<a href="career.html" class="footerNav__link">КАРЬЕРА</a>
+		</li>
+		<li class="footerNav__item">
+			<a href="#" class="footerNav__link">КОНТАКТЫ</a>
+		</li>
+	</ul>
+</footer>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		let position = 0
+		const slidesToShow = 1
+		const slidesToScroll = 1
+		const container =  $('.slider__container') 
+		const track =  $('.slider__track') 
+		const item =  $('.slider__item') 
+		const btnLeft =  $('.slider__toggles__left') 
+		const btnRight =  $('.slider__toggles__right') 
+		const itemsCount = item.length
+		const itemWidth = container.width() / slidesToShow
+
+		const movePosition = itemWidth * slidesToScroll
+
+		item.each(function(index,item){
+			$(item).css({
+				minWidth: itemWidth,
+			})
+		})
+
+		btnRight.click(function(){
+			if(position <= -(itemsCount - slidesToShow)* itemWidth)
+				position = 0
+			else
+				position -= movePosition
+			setPosition()
+		})
+
+		btnLeft.click(function(){
+			if (position === 0) 
+				position = -(itemsCount - slidesToShow)* itemWidth
+			else
+				position += movePosition
+			setPosition()	
+		})
+		const setPosition = () => {
+			track.css({
+				transform: `translateX(${position}px)`
+			})
+			
+		}
+		
+
+	})
+
+
+
+
+$(document).ready(function(){
+		let position = 0
+		const slidesToShow = 1
+		const slidesToScroll = 1
+		const container =  $('.commentSlider__content') 
+		const track =  $('.commentSlider__track') 
+		const item =  $('.commentSlider__item') 
+		const btnLeft =  $('.commentSlider__btnLeft') 
+		const btnRight =  $('.commentSlider__btnRight') 
+		const itemsCount = item.length
+		const itemWidth = container.width() / slidesToShow
+
+		const movePosition = itemWidth * slidesToScroll
+
+		item.each(function(index,item){
+			$(item).css({
+				minWidth: itemWidth,
+			})
+		})
+
+		btnRight.click(function(){
+			if(position <= -(itemsCount - slidesToShow)* itemWidth)
+				position = 0
+			else
+				position -= movePosition
+			setPosition()
+		})
+
+		btnLeft.click(function(){
+			if (position === 0) 
+				position = -(itemsCount - slidesToShow)* itemWidth
+			else
+				position += movePosition
+			setPosition()	
+		})
+		const setPosition = () => {
+			track.css({
+				transform: `translateX(${position}px)`
+			})
+			
+		}
+
+	})
+
+
+
+</script>
+</body>
+</html>

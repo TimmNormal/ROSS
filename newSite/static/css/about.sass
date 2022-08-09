@@ -1,0 +1,56 @@
+$mainColor: #0C3B83
+
+=flex($justify)
+	display: flex
+	justify-content: $justify
+	flex-direction: row
+
+
+
+=font($size,$weight,$color)
+	font-family: Roboto, sans-serif
+	font-style: normal
+	font-size: $size
+	font-weight: $weight
+	color: $color
+
+
+.aboutCompany
+	background-color: #fff
+	padding: 57px 38px
+	&__title
+		+font(50px,700,$mainColor)
+		text-align: right	
+		margin: 0
+		margin-bottom: 52px
+
+	&__content
+		+flex(space-between)
+
+	&__text
+		width: 570px
+		+font(24px,400,$mainColor)
+		flex-grow: 1
+		padding-right: 57px
+		margin: 0
+	&__imgCont
+		background-color: #C4C4C4
+		flex-grow: 2
+		+flex(center)
+		align-items: center
+		&__text
+			+font(24px,700, $mainColor)
+			max-width: 342px
+			text-align: center
+
+.ourPhilosophy
+	background-image: url('../images/philosophyBg.png')
+	padding: 31px 55px
+	margin-bottom: 22px
+	&__title
+		+font(50px,700,white)
+	&__content
+	&__text
+	&__imgCont
+	&__text
+		+font(24px,700,white)

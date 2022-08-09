@@ -1,0 +1,273 @@
+$mainColor: #0C3B83
+
+=flex($justify)
+	display: flex
+	justify-content: $justify
+	flex-direction: row
+
+
+
+=font($size,$weight,$color)
+	font-family: Roboto, sans-serif
+	font-style: normal
+	font-size: $size
+	font-weight: $weight
+	color: $color
+a
+	text-decoration: none
+.card
+	+flex(space-between)
+	width: 460px
+	align-items: center
+	box-shadow: -9px -6px 10px -2px rgba(12, 59, 131, 0.2) inset
+	padding: 62px 40px
+	margin-bottom: 42px
+	border: 3px solid $mainColor
+	height: 229px
+
+	&__container
+		background-color: #fff
+		&__title
+			margin: 0
+			+font(64px,bold,#0C3B83)
+			padding-right: 40px
+			padding-top: 36px
+			text-align: right
+			margin-bottom: 57px
+	&__group
+		+flex(space-between)
+		flex-wrap: wrap
+		padding: 0 45px
+	&__title
+		margin: 0
+		+font(42px,bold,$mainColor)
+		margin-bottom: 19px
+		flex-grow: 1
+	&__text
+		margin: 0
+		+font(18px, normal, $mainColor)
+	&__image
+		width: 200px
+		flex-grow: 0
+
+
+// МОДАЛЬНОЕ ОКНО ШАПКИ
+
+/* свойства модального окна по умолчанию */
+.modal 
+	position: fixed /* фиксированное положение */
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(0,0,0,0.6) /* цвет фона */
+	z-index: 1050
+	opacity: 0 /* по умолчанию модальное окно прозрачно */
+	-webkit-transition: opacity 200ms ease-in 
+	-moz-transition: opacity 200ms ease-in
+	transition: opacity 200ms ease-in /* анимация перехода */
+	pointer-events: none /* элемент невидим для событий мыши */
+	margin: 0
+	padding: 0
+	
+
+/* при отображении модального окно */
+.modal:target 
+	opacity: 1 /* делаем окно видимым */
+	pointer-events: auto /* элемент видим для событий мыши */
+	overflow-y: auto /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog 
+	position: relative
+	width: 1100px
+	margin: 20px auto
+
+
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content 
+	position: relative
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	flex-direction: column
+	background-color: #fff
+	-webkit-background-clip: padding-box
+	background-clip: padding-box
+	border: 1px solid rgba(0,0,0,.2)
+	border-radius: 20px
+	outline: 0
+
+
+/* свойства для кнопки "Закрыть" */
+.close 
+	float: right
+	font-family: sans-serif
+	font-size: 34px
+	font-weight: 700
+	line-height: 1
+	color: #000
+	text-shadow: 0 1px 0 #fff
+	opacity: .5
+	text-decoration: none
+
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover 
+	color: #000
+	text-decoration: none
+	cursor: pointer
+	opacity: .75
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body 
+	position: relative
+	-webkit-box-flex: 1
+	-webkit-flex: 1 1 auto
+	-ms-flex: 1 1 auto
+	flex: 1 1 auto
+	padding: 15px
+	overflow: auto
+
+.snegir
+	
+.tdNoBord
+	font-size: 22px
+	border-bottom: (none !important)
+.modal
+	&__main
+		+flex(flex-start)
+		padding-top: 60px
+		padding-bottom: 60px
+	&__images
+	&__images__row
+		+flex(space-between)
+	&__image__big
+		height: 100%
+		cursor: pointer
+	&__image__small
+		width: 129px
+		border: 3px solid $mainColor
+		cursor: pointer
+		height: 100px
+		+flex(center)
+		overflow: hidden
+		img
+			height: 100%
+		
+	&__info
+		margin-left: 30px
+		table
+			color: $mainColor
+			tr 
+				td
+					border-bottom: 1px solid $mainColor
+					padding-top: 8px
+
+				td:first-child 
+					font-weight: bold
+
+	&__title
+		+font(50px, normal, $mainColor)
+		margin: 0
+	&__text
+		+font(16px, normal, $mainColor)
+		max-width: 430px
+	
+	&__
+
+
+
+.modal__form
+	+flex(space-between)
+	margin-top: 40px
+	&__button
+		border-radius:20px
+		background-color: $mainColor
+		padding: 10px 20px
+		padding-left: 25px
+		cursor: pointer
+		border: none
+		&:focus
+			outline: none
+	&__download
+		border-radius:20px
+		padding: 5px 20px
+		background-color: $mainColor
+		cursor: pointer
+		display: flex
+		text-align: center
+		align-items: center
+		+font(20px, normal, #fff)
+		&:focus
+			outline: none
+
+
+
+
+
+
+.slider
+	&__container
+		overflow: hidden
+		width: 440px
+		height: 352px
+		margin: 0 auto
+		margin-bottom: 20px
+		position: relative
+		border: 3px solid $mainColor
+	&__track
+		display: flex
+		transition: 200ms
+	&__item
+		height: 352px
+		position: relative
+		+flex(center)
+		img 
+			
+	&__toggles
+		
+		margin-bottom: 40px
+		position: absolute
+		top: 45%
+		width: 100%
+		+flex(space-between)
+		&__left
+			position: absolute
+			font-size: 32px
+			border: none
+			background-color: transparent
+			cursor: pointer
+			width: 50px
+			height: 50px
+			top: 230px
+			>img
+				width: 100%
+				height: 100%
+			&:focus
+				outline: none
+			&:active
+				transform: scale(1.2)
+
+		&__right
+			position: absolute
+			font-size: 32px
+			border: none
+			background-color: transparent
+			cursor: pointer
+			width: 50px
+			height: 50px
+			top: 230px
+			left: 420px
+			>img
+				width: 100%
+				height: 100%
+			&:focus
+				outline: none
+			&:active
+				transform: scale(1.2)

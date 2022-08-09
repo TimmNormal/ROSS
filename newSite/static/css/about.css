@@ -1,0 +1,60 @@
+.aboutCompany {
+  background-color: #fff;
+  padding: 57px 38px;
+}
+.aboutCompany__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  color: #0C3B83;
+  text-align: right;
+  margin: 0;
+  margin-bottom: 52px;
+}
+.aboutCompany__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.aboutCompany__text {
+  width: 570px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0C3B83;
+  flex-grow: 1;
+  padding-right: 57px;
+  margin: 0;
+}
+.aboutCompany__imgCont {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutCompany__img{
+  width: 450px;
+}
+
+.ourPhilosophy {
+  background-image: url("../images/philosophyBg.png");
+  padding: 31px 55px;
+  margin-bottom: 22px;
+}
+.ourPhilosophy__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+.ourPhilosophy__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
