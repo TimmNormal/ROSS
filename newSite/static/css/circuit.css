@@ -1,3 +1,5 @@
+
+
 #board_plate{
     position: absolute;
 
@@ -6,6 +8,8 @@
     
     height: 100%;
     width: 100%;
+
+   
 
 
     min-width: 800px;
@@ -18,12 +22,12 @@
 
     position: relative;
 
-    min-height: 100vh;
+    min-height: 170px;
 
     width: 100vw;
 
 
-    background-color: #fff;
+    background-color: white;
 }
 
 .fade_in_animation{
@@ -32,6 +36,201 @@
 
 .fade_circuit{
   animation: fade_in_circuit 0.8s ;
+}
+
+
+.line{
+  position: absolute;
+
+  background: #1e3e92;
+  height: 6px;
+  
+
+  
+
+}
+
+.line.left{
+  transform-origin: center left;
+}
+
+.line.right{
+  transform-origin: center right;
+}
+
+.circle.top{
+  bottom: 100%;
+}
+
+.circle.bottom{
+  top: 100%;
+}
+.circle{
+  position: absolute;
+
+  left:-145%;
+
+  border: 6px solid  #1e3e92;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+}
+
+.v_line.left{
+  left: 470px;
+}
+
+.v_line.right{
+  right: 470px;
+}
+
+.v_line{
+  
+  position: absolute;
+
+  top: 68px;
+
+  width: 6px;
+  height: 48px;
+
+  background: #1e3e92;
+  
+}
+
+.left{
+  left: 0;
+}
+
+.right{
+  right: 0;
+}
+
+.left .ang{
+  left: calc(100% - 2px);
+  transform: rotate(45deg) !important;
+}
+
+.right .ang{
+  right: calc(100% - 2px);
+  transform: rotate(-45deg) !important;
+}
+
+.left .m_ang{
+  transform: rotate(-45deg) !important;
+}
+
+
+
+.right .m_ang{
+  transform: rotate(45deg) !important;
+}
+
+.little{
+  width: 20px;
+}
+
+.little_x{
+  width: 50px;
+}
+
+.xl3{
+  width: 500px;
+}
+
+.xl2{
+  width: 350px;
+}
+
+.xl2_5{
+  width: 400px;
+}
+
+.xl1{
+  top: 0;
+  width: 300px;
+}
+
+.xl{
+  top: 0;
+  width: 200px;
+}
+
+.t1{
+  top: 0;
+}
+
+.t2{
+  top: 43px;
+}
+
+.t3{
+  top: 85px;
+}
+
+.t4{
+  top: 129px;
+}
+
+.t5{
+  bottom: 0;
+}
+
+.us::after{
+  display: block;
+  content:"";
+
+  position: absolute;
+
+  top:-8px;
+
+  border: 6px solid  #1e3e92;
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  
+}
+
+.us.left::after{
+  left: 99.5%;
+}
+
+.us.right::after{
+  right: 99.5%;
+}
+
+.right.line::before, .right .line::before{
+  right: -10px;
+}
+
+.left.line::before, .left .line::before{
+  left: -10px;
+}
+
+.line::before{
+  display: block;
+  content: "";
+
+  position: absolute;
+  top:-1px; 
+
+  height: 8px;
+  width: 10px;
+  border-radius: 10px;
+
+  background: #72EAFF;
+  opacity: 0.8;
+
+  box-shadow: 0 0 2px #72EAFF;
+  opacity: 0;
+  
+
+  /* animation: electro 0.2s infinite linear ; */
 }
 
 
@@ -46,7 +245,19 @@
     stroke-linecap: round;
     stroke-miterlimit: 10;
   }
-  
+
+
+  .animation::before{
+    animation: left_electro 2s linear infinite;
+  }
+
+  .animation_d_2s::before{
+    animation-delay: 2s;
+  }
+
+
+
+
   @keyframes fade_in_circuit {
     0%{
       opacity: 0;
@@ -68,3 +279,250 @@
       opacity: 1;
     }
   }
+
+
+
+  @keyframes two_blink {
+    0%{
+      border-color: #1e3e92;
+    }
+    50%{
+      border-color: #72EAFF;
+    }
+
+    100%{
+      border-color: #1e3e92;
+    }
+  }
+
+
+.left.second_animation_one::before{
+  animation: second_electro_one 2s linear 2s infinite;
+}
+
+.left .second_animation_two::before{
+  animation: second_electro_two 2s linear 2s infinite;
+}
+
+.left .second_animation_three::before{
+  animation: second_electro_three 2s linear 2s infinite;
+}
+
+.left.thred_animation_one::before{
+  animation: second_electro_one 2s linear 1s infinite;
+}
+
+.left .thred_animation_two::before{
+  animation: second_electro_two 2s linear 1s infinite;
+}
+
+.left .thred_animation_three::before{
+  animation: second_electro_three 2s linear 1s infinite;
+}
+
+
+.left .second_blink::after{
+  animation: one_blink 2s linear 2s infinite;
+}
+
+.left .thred_blink::after{
+  animation: blink 0.5s linear 3s infinite;
+}
+
+.left.line_animated::before{
+  opacity: 1 !important;
+  animation: left_electro 3s linear 1.5s infinite;
+}
+
+
+.right.second_animation_one::before{
+  animation: right_second_electro_one 2s linear 2s infinite;
+}
+
+.right .second_animation_two::before{
+  animation: right_second_electro_two 2s linear 2s infinite;
+}
+
+.right .second_animation_three::before{
+  animation: right_second_electro_three 2s linear 2s infinite;
+}
+
+.right.thred_animation_one::before{
+  animation: right_second_electro_one 2s linear 1s infinite;
+}
+
+.right .thred_animation_two::before{
+  animation: right_second_electro_two 2s linear 1s infinite;
+}
+
+.right .thred_animation_three::before{
+  animation: right_second_electro_three 2s linear 1s infinite;
+}
+
+
+/* .right .second_blink::after{
+  animation: one_blink 2s linear 2s infinite;
+}
+
+.right .thred_blink::after{
+  animation: blink 0.5s linear 3s infinite;
+} */
+
+.right.line_animated::before{
+  opacity: 1 !important;
+  animation: right_electro 3s linear 1.5s infinite;
+}
+
+
+
+@keyframes left_electro {
+  from{
+    left: -10px;
+  }
+  to{
+    left:100%;
+  }
+}
+
+
+@keyframes right_electro {
+  from{
+    right: -10px;
+  }
+  to{
+    right:100%;
+  }
+}
+
+
+
+
+
+
+@keyframes second_electro_one {
+  0%{
+    left:0;
+    opacity: 1;
+  }
+  89%{
+    opacity: 1;
+  }
+  90%{
+    left:100%;
+    opacity: 0;
+  }
+  100%{
+    left:100%
+  }
+}
+
+@keyframes second_electro_two {
+  0%{
+    left:0;
+    opacity: 0;
+  }
+  89%{
+    opacity: 0;
+  }
+  90%{
+    left:0;
+    opacity: 1;
+  }
+  94%{
+    opacity: 1;
+  }
+  95%{
+    left:100%;
+    opacity: 0;
+  }
+  100%{
+    left:100%;
+
+    opacity: 0;
+  }
+}
+
+@keyframes second_electro_three {
+  0%{
+    left:0;
+    opacity: 0;
+  }
+  94%{
+    opacity: 0;
+  }
+  95%{
+    opacity: 1;
+    left:0;
+  }
+  100%{
+    opacity: 1;
+    left:100%
+  }
+}
+
+
+
+@keyframes right_second_electro_one {
+  0%{
+    right:0;
+    opacity: 1;
+  }
+  89%{
+    opacity: 1;
+  }
+  90%{
+    right:100%;
+    opacity: 0;
+  }
+  100%{
+    right:100%
+  }
+}
+
+@keyframes right_second_electro_two {
+  0%{
+    right:0;
+    opacity: 0;
+  }
+  89%{
+    opacity: 0;
+  }
+  90%{
+    right:0;
+    opacity: 1;
+  }
+  94%{
+    opacity: 1;
+  }
+  95%{
+    right:100%;
+    opacity: 0;
+  }
+  100%{
+    right:100%;
+
+    opacity: 0;
+  }
+}
+
+@keyframes right_second_electro_three {
+  0%{
+    right:0;
+    opacity: 0;
+  }
+  94%{
+    opacity: 0;
+  }
+  95%{
+    opacity: 1;
+    right:0;
+  }
+  100%{
+    opacity: 1;
+    right:100%
+  }
+}
+
+
+
+

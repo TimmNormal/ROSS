@@ -21,16 +21,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #DCDCDC;
+  background-color: white;
 }
 
 .main{
-  position: absolute;
+  /* position: absolute; */
   z-index: 10;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px !important;
+  /* margin-bottom: 20px !important; */
 }
 .center {
   width: 1200px;
@@ -113,7 +113,7 @@ footer{
 .header {
   z-index: 2;
   max-height: 238px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   position: relative;
 }
 .header__nav {
@@ -478,6 +478,8 @@ input[type=file] {
   height: 200px;
 }
 .slider__form{
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
 
@@ -490,9 +492,10 @@ input[type=file] {
   background-color: #fff;
   text-align: left;
   padding-left: 80px;
-  width: 80%;
-  height: 100%;
+  width: 70%;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
   word-wrap: break-word;
 }
 .slider__image {
@@ -768,7 +771,6 @@ input[type=file] {
   </div>
 </header>
 
-<div style="position: relative;">
   <div class="main center" id="start_banner">	
     <section class="cooperation ">	
       <h1 class="cooperation__title">СОТРУДНИЧЕСТВО С НАМИ ВЫГОДНО!</h1>
@@ -791,11 +793,53 @@ input[type=file] {
 
   </div>
 
-<div id="board_parent">
-  <div id="board_plate">
+  <div id="board_parent" style=" margin-top: 35px;margin-bottom: 35px;">
+    <!-- Левая часть -->
+    <span class="line line_animated xl3 left us t1 animation"></span>
+    <span class="line xl2 left t2 second_animation_one">
+        <span class="line little left second_animation_two ang">
+            <span class="line little second_blink el_us us second_animation_three left ang"></span>
+        </span>
+    </span>
+    <span class="line xl1 left us t3"></span>
+    <span class="line xl2_5 left t4 thred_animation_one">
+        <span class="line little u left thred_animation_two ang m_ang">
+            <span class="line thred_blink little_x us thred_animation_three left ang m_ang"></span>
 
-  </div>
-</div>
+        </span>
+    </span>
+    <span class="line line_animated xl3 left us t5"></span>
+
+    <span class="v_line left">
+        <span class="circle top"></span>
+
+        <span class="circle bottom"></span>
+    </span>
+
+    <img src="../static/images/headerLogo.png" alt="" class="fade_in_animation header__rCont__logo">
+
+    <span class="line line_animated xl3 right us t1"></span>
+    <span class="line xl2 second_animation_one right t2">
+        <span class="line little second_animation_two right ang">
+            <span class="line little us second_animation_three right ang"></span>
+        </span>
+    </span>
+    <span class="line xl1 right us t3"></span>
+    <span class="line xl2_5 second_animation_one right t4 ">
+        <span class="line little u right second_animation_two ang m_ang">
+            <span class="line little_x us second_animation_three right ang m_ang"></span>
+
+        </span>
+    </span>
+    <span class="line line_animated xl3 right us t5"></span>
+
+    <span class="v_line right">
+        <span class="circle top"></span>
+
+        <span class="circle bottom"></span>
+    </span>
+
+
 
 </div>
 	<section class="slider">	
@@ -807,40 +851,40 @@ input[type=file] {
         </button>
     		<div class="slider__track">
     			<div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
-              <input type="submit" value="Системы дальнего видеонаблюдения" class="slider__text"/>
-            </form>
+            <div class="slider__form" >
+              <a href="./products.html?page=1" class="slider__text">Системы дальнего видеонаблюдения</a>
+            </div>
             <img src="../../pic/slide2.svg" alt="">
     			</div>
           <div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+            <form class="slider__form" action="../static/pdf/Мобильный привязной аэростатный комплекс(МПАК).pdf">
               <input type="submit" value="Мобильный привязной аэростатный комплекс" class="slider__text"/>
             </form>
             <img src="../../pic/slide6.svg" alt="">
     			</div>
           <div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+            <form class="slider__form" action="../static/pdf/Мобильный пункт управления.pdf">
               <input type="submit" value="Мобильный пункт управления" class="slider__text"/>
             </form>
             <img src="../../pic/slide3.svg" alt="">
     			</div>
           <div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
-              <input type="submit" value="Гиростабилизированные оптико-электронные средства" class="slider__text"/>
-            </form>
+            <div class="slider__form">
+              <a href="./products.html?page=2" class="slider__text">Гиростабилизированные оптико-электронные средства</a>
+            </div>
             <img src="../../pic/slide1.svg" alt="">
     			</div>
           
           <div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+            <form class="slider__form" action="../static/pdf/робототехника.pdf">
               <input type="submit" value="Робототехника" class="slider__text"/>
             </form>
             <img src="../../pic/slide5.svg" alt="">
     			</div>
           <div class="slider__item">
-            <form class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
-              <input type="submit" value="Разработки" class="slider__text"/>
-            </form>
+            <div class="slider__form" action="../static/pdf/Ролл-ап МПАК.pdf">
+              <a href="./products.html?page=3" class="slider__text">Разработки</a>
+            </div>
             <img src="../../pic/slide4.svg" alt="">
     			</div>
 	    		
